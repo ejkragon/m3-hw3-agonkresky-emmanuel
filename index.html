@@ -22,6 +22,7 @@
   </head>
  
   <body>
+    <div class="container vh-100">
 
     <nav>
       <ul>
@@ -33,11 +34,11 @@
     </nav>
 
 
-    <img src="img/banner-bg-v2.png" alt="Bob's Burger Banner">
+    <img src="img/banner-bg-v2.png" class="img-fluid" alt="Bob's Burger Banner">
     <h1>Bob's Burgers</h1> 
     <button>Order Now</button>
     
-    <div class="container">
+    <main>
       <div class="row">
         <div class="col-8">
           <h2>World's Best Burgers</h2>
@@ -45,26 +46,28 @@
           <button>View Menu</button>
         </div>
         <div class="col-4 text-center">
-          <img src="img/bobs-burger.png" alt="Image of Burger">
+          <img src="img/bobs-burger.png" class="img-fluid" alt="Image of Burger">
         </div>
       </div>
       
-      <div class="row">
+      <div class="row" id="secondary-background">
         <div class="col-4 text-center">
-          <img src="img/bob-headshot.png" alt="Bob's    Headshot">
+          <img src="img/bob-headshot.png" class="img-fluid" alt="Bob's    Headshot">
         </div>
         <div class="col-8">
          <h2>Dine-in or Take-out</h2>
           <p>Lorem ipsum dolor sit amet, consectetur    adipiscing elit, sed do eiusmod tempor  incididunt  ut labore et dolore magna aliqua. Ut   enim ad minim   veniam, quis nostrud  exercitation ullamco laboris   nisi ut aliquip   ex ea commodo consequat. Duis aute  irure dolor   in reprehenderit in voluptate velit  esse cillum  dolore eu fugiat nulla pariatur.   Excepteur   sint occaecat cupidatat non proident,   sunt in   culpa.</p>
          <button>Contact Us</button>
+       </div>
       </div>
-    </div>
+    </main>
 
-    <footer class="text-center">
-      <img src="img/logo.png" alt="Bob's Burgers Logo">
+    <footer>
+      <div class="text-center">
+      <img src="img/logo.png" class="img-fluid" alt="Bob's Burgers Logo">
+      </div>
     </footer>
-    </div>
-
+  </div>
 
     <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
 
