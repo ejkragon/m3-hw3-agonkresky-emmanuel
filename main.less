@@ -1,17 +1,17 @@
 @import "./variables.less";
+@import "./mixins.less";
+
+html, body {
+    #reset();
+}
 
 body {
-   font-family: 'Roboto', sans-serif;
-    color: @text-color;
+    font: @font-family;
     h2 {
-        font-size: 30px;
-        font-weight: 500;
-        text-transform: uppercase;
+        #heading;
             p {
-                font-size: 16px;
-                font-weight: 400;
+                #bodytype;
             }
-        }   
     span {
         color: @span-color;
         text-transform: uppercase;
@@ -42,26 +42,24 @@ header {
 
 
 button {
-    background-color: @background;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-radius: 8px;
-    border: none;
-    padding: @space @space * 2;
+    #button;
 }
 
 #first-section {
-    padding: @space * 4;
+    #sectionpadding;
 }
 
 #secondary-background {
     background-color: @secondary-background;
-    #first-section();
+    #sectionpadding;
 }
 
 footer {
+    #footerborder;
     background-color: @footer-background;
-    border-top: .5rem solid @background;
-    #first-section();
+    #sectionpadding;
+}
+
+
+
 }
