@@ -3,39 +3,42 @@
 body {
    font-family: 'Roboto', sans-serif;
     color: @text-color;
-    h1 {
-        display: none;
-        h2 {
+    h2 {
         font-size: 30px;
         font-weight: 500;
+        text-transform: uppercase;
             p {
                 font-size: 16px;
                 font-weight: 400;
             }
         }   
+    span {
+        color: @span-color;
+    }
+    }
+
+header {
+    nav {
+        background-color: @background;
+        padding: @space * 2 0;
+        ul {
+            display: flex;
+            li {
+                display: inline-block;
+                text-decoration: none;
+                align-items: flex-start;
+                align-content: space-between;
+                padding-right: @space;
+            }
+            :last-child {
+                color: @span-color;
+                text-transform: uppercase;
+                padding-right: 0;
+            }
+        }
     }
 }
 
-
-
-nav {
-    background-color: @background;
-    padding: @space * 2;
-    ul {
-        display: flex;
-        li {
-            display: inline-block;
-            text-decoration: none;
-            align-items: flex-start;
-            align-content: space-between;
-            padding-right: @space;
-        }
-        :last-child {
-            color: @span-color;
-            text-transform: uppercase;
-        }
-    }
-}
 
 button {
     background-color: @background;
@@ -43,13 +46,22 @@ button {
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 8px;
+    border: none;
+    padding: @space @space * 2;
+}
+
+#first-section {
+    padding: @space * 4;
 }
 
 #secondary-background {
     background-color: @secondary-background;
+    #first-section();
+    padding-bottom: 0;
 }
 
 footer {
     background-color: @footer-background;
     border-top: .5rem solid @background;
+    #first-section();
 }
